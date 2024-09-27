@@ -13,8 +13,11 @@ package Chapter8.ex08_1_exercise;
             }
             else {
                 this.color = colorCode;
+                System.out.println(colorCode);
                 return true;
+
             }
+
         }
     }
 
