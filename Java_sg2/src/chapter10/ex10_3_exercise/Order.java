@@ -1,5 +1,5 @@
 package chapter10.ex10_3_exercise;
-<<<<<<< HEAD
+
 //
 //In the Order class:
 //        1. Rewrite the calcDiscount code using a switch statement.
@@ -50,8 +50,5 @@ public class Order {
     }
 
 
-=======
 
-public class Order {
-}
->>>>>>> origin/main
+
