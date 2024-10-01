@@ -9,7 +9,6 @@ package chapter10.ex10_2_exercise;
 //     - Corporate types get 8% if order < 500, otherwise they get 5%.
 //     - Use nested and chained if statement
 
-
 public class Order {
     static final char CORP = 'C';
     static final char PRIVATE = 'P';
@@ -20,13 +19,18 @@ public class Order {
     double discount;
     char custType;
 
+
     // Constructor to initialize the order
     public Order(String name, double total, String state, char custType) {
         this.name = name;
         this.total = total;
         this.stateCode = state;
         this.custType = custType;
+
         calcDiscount();// Automatically calculate the discount when an order is created
+
+        calcDiscount();
+
     }
 
     public String getDiscount(){
@@ -50,5 +54,4 @@ public class Order {
         }
     }
 }
-
 
