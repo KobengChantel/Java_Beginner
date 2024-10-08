@@ -4,30 +4,31 @@ package chapter11.practice1.soccer;
 
 
 public class Team {
-    
+
     private String teamName;
     private Player[] playerArray;
     private int pointsTotal;
     private int goalsTotal;
-    
-    public void incGoalsTotal(int goals){
+
+    public void incGoalsTotal(int goals) {
         this.setGoalsTotal(this.getGoalsTotal() + goals);
     }
 
-    public void incPointsTotal(int points){
+    public void incPointsTotal(int points) {
         this.pointsTotal += points;
     }
-    
+
     public Team(String teamName) {
         this.teamName = teamName;
     }
-    
+
     public Team(String teamName, Player[] players) {
         this(teamName);
         this.playerArray = players;
     }
-    
-    public Team() {}
+
+    public Team() {
+    }
 
     /**
      * @return the teamName
@@ -84,5 +85,5 @@ public class Team {
     public void setGoalsTotal(int goalsTotal) {
         this.goalsTotal = goalsTotal;
     }
-    
+
 }

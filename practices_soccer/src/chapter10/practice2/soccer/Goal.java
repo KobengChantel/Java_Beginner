@@ -3,7 +3,7 @@
 package chapter10.practice2.soccer;
 
 public class Goal {
-    
+
     private Team theTeam;
     private Player thePlayer;
     private double theTime;
@@ -49,5 +49,5 @@ public class Goal {
     public void setTheTime(double theTime) {
         this.theTime = theTime;
     }
-    
+
 }

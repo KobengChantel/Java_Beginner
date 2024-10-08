@@ -4,20 +4,21 @@ package chapter9.practice2.soccer;
 
 
 public class Team {
-    
+
     private String teamName;
     private Player[] playerArray;
-    
+
     public Team(String teamName) {
         this.teamName = teamName;
     }
-    
+
     public Team(String teamName, Player[] players) {
         this(teamName);
         this.playerArray = players;
     }
-    
-    public Team() {}
+
+    public Team() {
+    }
 
     /**
      * @return the teamName
@@ -46,5 +47,5 @@ public class Team {
     public void setPlayerArray(Player[] playerArray) {
         this.playerArray = playerArray;
     }
-    
+
 }

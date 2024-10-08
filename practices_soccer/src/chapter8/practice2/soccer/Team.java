@@ -7,12 +7,11 @@
 package chapter8.practice2.soccer;
 
 /**
- *
  * @author Administrator
  */
 public class Team {
-    
+
     public String teamName;
     public Player[] playerArray;
-    
+
 }

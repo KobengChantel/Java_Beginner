@@ -7,32 +7,31 @@
 package chapter15.soccer.event;
 
 /**
- *
  * @author ksomervi
  */
 public class Pass extends GameEvent {
-    
-    public Pass(){
-        
+
+    public Pass() {
+
         super();
-        
+
     }
-    
+
     public String toString() {
         return "Pass attempt ";
     }
-    
+
     public GameEvent[] getNextEvents() {
-        GameEvent theEvent[] = { new ReceivePass(), new GainPossession()};
+        GameEvent theEvent[] = {new ReceivePass(), new GainPossession()};
         return theEvent;
     }
-    
+
     public boolean changePlayer() {
         return false;
     }
-    
+
     public boolean changeTeam() {
         return false;
     }
-    
+
 }

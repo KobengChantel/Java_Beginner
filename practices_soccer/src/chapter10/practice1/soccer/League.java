@@ -2,22 +2,21 @@
 package chapter10.practice1.soccer;
 
 
-
 public class League {
 
 
     public static void main(String[] args) {
-        
+
         League theLeague = new League();
 
         Team[] theTeams = theLeague.createTeams();
         Game[] theGames = theLeague.createGames(theTeams);
 
-        for (Game currGame: theGames){
+        for (Game currGame : theGames) {
             currGame.playGame();
             System.out.println(currGame.getDescription());
         }
-        
+
         theLeague.showBestTeam(theTeams);
 
     }
@@ -51,19 +50,19 @@ public class League {
         Game[] theGames = {theGame, theGame2, theGame3, theGame4};
         return theGames;
     }
-    
+
     public void showBestTeam(Team[] theTeams) {
-        Team currBestTeam = theTeams[0];  
-        System.out.println("\nTeam Points");       
-           
-        for (Team currTeam: theTeams){
+        Team currBestTeam = theTeams[0];
+        System.out.println("\nTeam Points");
+
+        for (Team currTeam : theTeams) {
             System.out.println(currTeam.getTeamName() + " : " + currTeam.getPointsTotal());
-            currBestTeam = currTeam.getPointsTotal() > currBestTeam.getPointsTotal()?currTeam:currBestTeam;
+            currBestTeam = currTeam.getPointsTotal() > currBestTeam.getPointsTotal() ? currTeam : currBestTeam;
         }
-        
+
         System.out.println("Winner of the League is " + currBestTeam.getTeamName());
-        
-        
+
+
     }
 
 }

@@ -11,7 +11,7 @@ public class League {
         player2.playerName = "Graham Greene";
         Player player3 = new Player();
         player3.playerName = "Geoffrey Chaucer";
-        Player[] thePlayers = {player1, player2, player3 };
+        Player[] thePlayers = {player1, player2, player3};
 
         Team team1 = new Team();
         team1.teamName = "The Greens";
@@ -47,8 +47,7 @@ public class League {
                 currGame.goals[0].theTeam.teamName);
 
 
-
-        for (Player thePlayer: team2.playerArray) {
+        for (Player thePlayer : team2.playerArray) {
             //System.out.println(thePlayer.playerName);
             if (thePlayer.playerName.matches(".*Sab.*")) {
                 System.out.println("Found " + thePlayer.playerName);
@@ -57,13 +56,13 @@ public class League {
         }
 
         StringBuilder familyNameFirst = new StringBuilder();
-        for (Player thePlayer: team1.playerArray) {
+        for (Player thePlayer : team1.playerArray) {
             String[] name = thePlayer.playerName.split(" ");
             familyNameFirst.append(name[1]);
             familyNameFirst.append(", ");
             familyNameFirst.append(name[0]);
             System.out.println(familyNameFirst);
-            familyNameFirst.delete(0,familyNameFirst.length());
+            familyNameFirst.delete(0, familyNameFirst.length());
 
         }
     }

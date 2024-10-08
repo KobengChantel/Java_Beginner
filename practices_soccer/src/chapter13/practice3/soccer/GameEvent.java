@@ -4,7 +4,7 @@ package chapter13.practice3.soccer;
 
 
 public abstract class GameEvent {
-    
+
     private Team theTeam;
     private Player thePlayer;
     private double theTime;
@@ -51,5 +51,5 @@ public abstract class GameEvent {
         this.theTime = theTime;
     }
 
-    
+
 }

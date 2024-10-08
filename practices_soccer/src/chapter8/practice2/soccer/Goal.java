@@ -7,13 +7,12 @@
 package chapter8.practice2.soccer;
 
 /**
- *
  * @author Administrator
  */
 public class Goal {
-    
+
     public Team theTeam;
     public Player thePlayer;
     public double theTime;
-    
+
 }

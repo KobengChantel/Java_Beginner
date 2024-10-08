@@ -7,13 +7,12 @@
 package chapter14.soccer;
 
 /**
- *
  * @author ksomervi
  */
 public class Possession extends GameEvent {
-    
-    public String toString(){
+
+    public String toString() {
         return "Possession";
     }
-    
+
 }

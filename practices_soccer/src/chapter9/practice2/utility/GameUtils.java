@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class GameUtils {
 
     public static void addGameGoals(Game currGame) {
-        
+
         //System.out.println(currGame.awayTeam + " : " + currGame.homeTeam);
 
         // Or possibly throw an Exception?

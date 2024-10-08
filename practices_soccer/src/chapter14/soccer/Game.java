@@ -7,55 +7,54 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 
-
 public class Game {
-    
+
     private Team homeTeam;
     private Team awayTeam;
     private GameEvent[] events;
     private LocalDateTime theDateTime;
-    
+
     public Game(Team homeTeam, Team awayTeam, LocalDateTime theDateTime) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
         this.theDateTime = theDateTime;
     }
-    
+
     public void playGame() {
-        ArrayList <GameEvent> eventList = new ArrayList();
+        ArrayList<GameEvent> eventList = new ArrayList();
         GameEvent currEvent;
-        for (int i = 1; i <=90; i++){
-            
-            if (Math.random() > 0.8){
-                
-                currEvent = Math.random() > 0.8?new Goal():new Possession();
-                currEvent.setTheTeam(Math.random() > 0.5?homeTeam: awayTeam);
+        for (int i = 1; i <= 90; i++) {
+
+            if (Math.random() > 0.8) {
+
+                currEvent = Math.random() > 0.8 ? new Goal() : new Possession();
+                currEvent.setTheTeam(Math.random() > 0.5 ? homeTeam : awayTeam);
                 currEvent.setThePlayer(currEvent.getTheTeam().
-                getPlayerArray()[(int)(Math.random() * currEvent.getTheTeam().getPlayerArray().length)]);
+                        getPlayerArray()[(int) (Math.random() * currEvent.getTheTeam().getPlayerArray().length)]);
                 currEvent.setTheTime(i);
                 eventList.add(currEvent);
                 //System.out.println(i);
             }
             this.events = new GameEvent[eventList.size()];
             eventList.toArray(events);
- 
+
         }
     }
-    
+
     public String getDescription() {
-                       
+
         int homeTeamGoals = 0;
         int awayTeamGoals = 0;
         StringBuilder returnString = new StringBuilder();
-        
+
         returnString.append(this.getHomeTeam().getTeamName() + " vs. " +
-        this.getAwayTeam().getTeamName() + "\n" + 
-               "Date: " + this.getTheDateTime().format(DateTimeFormatter.ISO_LOCAL_DATE) + "\n");
-         
-        for (GameEvent currEvent: this.getEvents()) {
-            
+                this.getAwayTeam().getTeamName() + "\n" +
+                "Date: " + this.getTheDateTime().format(DateTimeFormatter.ISO_LOCAL_DATE) + "\n");
+
+        for (GameEvent currEvent : this.getEvents()) {
+
             if (currEvent instanceof Goal) {
-                if (currEvent.getTheTeam()== homeTeam) {
+                if (currEvent.getTheTeam() == homeTeam) {
                     homeTeamGoals++;
                     homeTeam.incGoalsTotal(1);
                 } else {
@@ -64,14 +63,14 @@ public class Game {
                 }
                 currEvent.getThePlayer().incGoalsScored();
             }
-            
-            returnString.append(currEvent +" after "
-            + currEvent.getTheTime() + " mins by "
-            + currEvent.getThePlayer().getPlayerName() + " of "
-            + currEvent.getTheTeam().getTeamName() +
-              "\n");
+
+            returnString.append(currEvent + " after "
+                    + currEvent.getTheTime() + " mins by "
+                    + currEvent.getThePlayer().getPlayerName() + " of "
+                    + currEvent.getTheTeam().getTeamName() +
+                    "\n");
         }
-        
+
         if (homeTeamGoals == awayTeamGoals) {
             returnString.append("It's a draw!");
             this.homeTeam.incPointsTotal(1);
@@ -84,7 +83,7 @@ public class Game {
             this.awayTeam.incPointsTotal(1);
         }
         returnString.append(" (" + homeTeamGoals + " - " + awayTeamGoals + ") \n");
-        
+
         return returnString.toString();
     }
 
@@ -157,5 +156,5 @@ public class Game {
     public void setTheDateTime(LocalDateTime theDateTime) {
         this.theDateTime = theDateTime;
     }
-      
+
 }

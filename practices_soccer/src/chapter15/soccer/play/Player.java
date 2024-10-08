@@ -7,23 +7,23 @@
 package chapter15.soccer.play;
 
 /**
- *
  * @author Administrator
  */
 public class Player implements Comparable {
-    
+
     private String playerName;
     private int goalsScored;
-    
+
     public void incGoalsScored() {
         this.goalsScored++;
     }
-    
+
     public Player(String playerName) {
         this.playerName = playerName;
     }
-    
-    public Player() {}
+
+    public Player() {
+    }
 
     /**
      * @return the playerName
@@ -52,21 +52,18 @@ public class Player implements Comparable {
     public void setGoalsScored(int goalsScored) {
         this.goalsScored = goalsScored;
     }
-    
-    
-    
-    
+
+
     // TODO - possibly remove this so can sort based on Lambda expression
     // If so, need to use 1.8 Java for GlassFish
-    public int compareTo(Object thePlayer){
+    public int compareTo(Object thePlayer) {
 
-        if (this.getGoalsScored() < ((Player)thePlayer).getGoalsScored()){
+        if (this.getGoalsScored() < ((Player) thePlayer).getGoalsScored()) {
             return 1;
-        }
-        else {
+        } else {
             return -1;
 
         }
     }
-    
+
 }

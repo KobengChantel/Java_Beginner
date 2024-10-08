@@ -1,7 +1,7 @@
 
 package chapter11.practice2.utility;
 
-import  chapter11.practice2.soccer.*;
+import chapter11.practice2.soccer.*;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class GameUtils {
 
     public static void addGameGoals(Game currGame) {
-        
+
         //System.out.println(currGame.awayTeam + " : " + currGame.homeTeam);
 
         // Or possibly throw an Exception?

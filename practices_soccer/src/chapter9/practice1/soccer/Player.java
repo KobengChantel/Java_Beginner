@@ -4,7 +4,7 @@ package chapter9.practice1.soccer;
 
 
 public class Player {
-    
+
     private String playerName;
 
     /**
@@ -20,5 +20,5 @@ public class Player {
     public void setPlayerName(String playerName) {
         this.playerName = playerName;
     }
-    
+
 }

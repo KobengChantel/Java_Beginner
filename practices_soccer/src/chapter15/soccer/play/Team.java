@@ -9,11 +9,10 @@ package chapter15.soccer.play;
 import soccer.event.GameEvent;
 
 /**
- *
  * @author Administrator
  */
 public class Team implements Comparable, IDisplayDataItem {
-    
+
     private String teamName;
     private Player[] playerArray;
     private int pointsTotal;
@@ -21,37 +20,38 @@ public class Team implements Comparable, IDisplayDataItem {
     private boolean detailAvailable = false;
     private int id = 0;
     private String detailType = "Team";
-    
-    public int compareTo(Object theTeam){
+
+    public int compareTo(Object theTeam) {
         int returnValue = -1;
-        if (this.getPointsTotal()< ((Team)theTeam).getPointsTotal()) {
+        if (this.getPointsTotal() < ((Team) theTeam).getPointsTotal()) {
             returnValue = 1;
-        } else if (this.getPointsTotal() == ((Team)theTeam).getPointsTotal()){
-            if (this.getGoalsTotal()< ((Team)theTeam).getGoalsTotal()) {
+        } else if (this.getPointsTotal() == ((Team) theTeam).getPointsTotal()) {
+            if (this.getGoalsTotal() < ((Team) theTeam).getGoalsTotal()) {
                 returnValue = 1;
-            } 
+            }
         }
         return returnValue;
     }
-    
-    public void incGoalsTotal(int goals){
+
+    public void incGoalsTotal(int goals) {
         this.setGoalsTotal(this.getGoalsTotal() + goals);
     }
 
-    public void incPointsTotal(int points){
+    public void incPointsTotal(int points) {
         this.pointsTotal += points;
     }
-    
+
     public Team(String teamName) {
         this.teamName = teamName;
     }
-    
+
     public Team(String teamName, Player[] players) {
         this(teamName);
         this.playerArray = players;
     }
-    
-    public Team() {}
+
+    public Team() {
+    }
 
     /**
      * @return the teamName
@@ -108,22 +108,25 @@ public class Team implements Comparable, IDisplayDataItem {
     public void setGoalsTotal(int goalsTotal) {
         this.goalsTotal = goalsTotal;
     }
-    
-    public String toString(){
+
+    public String toString() {
         return teamName;
     }
-    
+
     // Remainder is displayDetailStuff
-    
-    public String getDisplayDetail(){
+
+    public String getDisplayDetail() {
         return teamName;
     }
-    public boolean isDetailAvailable (){
+
+    public boolean isDetailAvailable() {
         return detailAvailable;
     }
-    public int getID(){
+
+    public int getID() {
         return id;
     }
+
     public String getDetailType() {
         return detailType;
     }
@@ -162,17 +165,17 @@ public class Team implements Comparable, IDisplayDataItem {
     public void setGetDetailType(String detailType) {
         this.detailType = detailType;
     }
-    
-    
+
+
     // Below code shows random selection of attempt
-    public GameEvent getNextPlayAttempt(GameEvent currEvent){
-        
+    public GameEvent getNextPlayAttempt(GameEvent currEvent) {
+
         GameEvent[] possEvents = currEvent.getNextEvents();
         currEvent = possEvents[(int) (Math.random()
                 * (possEvents.length))];
-        
+
         return currEvent;
     }
-    
-    
+
+
 }

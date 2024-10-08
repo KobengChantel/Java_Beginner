@@ -7,7 +7,6 @@ package chapter8.practice2.soccer;
 
 
 /**
- *
  * @author Administrator
  */
 public class League {
@@ -21,9 +20,9 @@ public class League {
         Game[] theGames = createGames(theTeams);
 
         Game currGame = theGames[0];
-        
+
         currGame.playGame();
-        
+
         System.out.println(currGame.getDescription());
 
     }

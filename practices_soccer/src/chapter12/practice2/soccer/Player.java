@@ -4,14 +4,15 @@ package chapter12.practice2.soccer;
 
 
 public class Player {
-    
+
     private String playerName;
-    
+
     public Player(String playerName) {
         this.playerName = playerName;
     }
-    
-    public Player() {}
+
+    public Player() {
+    }
 
     /**
      * @return the playerName
@@ -26,5 +27,5 @@ public class Player {
     public void setPlayerName(String playerName) {
         this.playerName = playerName;
     }
-    
+
 }

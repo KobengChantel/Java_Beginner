@@ -7,11 +7,10 @@
 package chapter8.practice2.soccer;
 
 /**
- *
  * @author Administrator
  */
 public class Player {
-    
+
     public String playerName;
-    
+
 }
