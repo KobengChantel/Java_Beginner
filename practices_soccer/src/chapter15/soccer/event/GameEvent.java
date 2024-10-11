@@ -2,8 +2,11 @@
 
 package chapter15.soccer.event;
 
-import chapter15.soccer.event.soccer.play.Player;
-import chapter15.soccer.event.soccer.play.Team;
+import soccer.play.Player;
+import soccer.play.Team;
+
+//import soccer.event.soccer.play.Player;
+//import chapter15.soccer.event.soccer.play.Team;
 
 
 public abstract class GameEvent {

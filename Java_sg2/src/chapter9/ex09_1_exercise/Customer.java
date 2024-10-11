@@ -24,7 +24,8 @@ public class Customer {
         return ssn;
     }
     public static void main(String[] args) {
-        chapter9.ex09_2_exercise.Customer customer = new chapter9.ex09_2_exercise.Customer("Kobeng Chantel", "123-45-6789");
+        chapter9.ex09_2_exercise.Customer customer = new chapter9.ex09_2_exercise.Customer(
+                "Kobeng Chantel", "123-45-6789");
         System.out.println("Customer Name: " + customer.getName());
         System.out.println("Customer SSN: " + customer.getSSN());
     }

@@ -1,6 +1,6 @@
 package Book3.chapter5;
 
-public class TicTacToe implements PlayAble {
+public class TicTacTeo implements PlayAble {
     private char[][] board;
     private char currentPlayer;
 
