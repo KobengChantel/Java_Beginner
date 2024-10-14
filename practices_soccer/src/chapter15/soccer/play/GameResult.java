@@ -6,8 +6,8 @@
 
 package chapter15.soccer.play;
 
-import soccer.event.GameEvent;
-import soccer.event.Goal;
+import chapter15.soccer.event.GameEvent;
+import chapter15.soccer.event.Goal;
 
 /**
  * @author ksomervi

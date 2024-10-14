@@ -2,8 +2,8 @@
 
 package chapter15.soccer.event;
 
-import soccer.play.Player;
-import soccer.play.Team;
+import chapter15.soccer.play.Player;
+import chapter15.soccer.play.Team;
 
 //import soccer.event.soccer.play.Player;
 //import chapter15.soccer.event.soccer.play.Team;
@@ -83,12 +83,12 @@ public abstract class GameEvent {
      * @param ballPos the ballPos to set
      */
     public void setBallPos(int ballPos) {
-        this.ballPos = ballPos + (soccer.util.Settings.PITCH_LENGTH - ballPos) / 8;
+        this.ballPos = ballPos + (chapter15.soccer.util.Settings.PITCH_LENGTH - ballPos) / 8;
     }
 
 
     public void reverseBallPos() {
-        this.ballPos = soccer.util.Settings.PITCH_LENGTH - this.ballPos;
+        this.ballPos = chapter15.soccer.util.Settings.PITCH_LENGTH - this.ballPos;
     }
 
 

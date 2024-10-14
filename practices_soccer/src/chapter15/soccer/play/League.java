@@ -5,8 +5,8 @@
  */
 package chapter15.soccer.play;
 
-import soccer.event.GameEvent;
-import soccer.event.Goal;
+import chapter15.soccer.event.GameEvent;
+import chapter15.soccer.event.Goal;
 
 import java.time.LocalDateTime;
 import java.time.Period;
@@ -15,9 +15,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-import soccer.util.PlayerDatabase;
-import soccer.util.PlayerDatabaseException;
-import soccer.util.Settings;
+import chapter15.soccer.util.PlayerDatabase;
+import chapter15.soccer.util.PlayerDatabaseException;
+import chapter15.soccer.util.Settings;
 
 /**
  * @author Administrator

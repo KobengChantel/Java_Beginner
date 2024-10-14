@@ -6,7 +6,7 @@
 
 package chapter15.soccer.util;
 
-import soccer.play.Player;
+import chapter15.soccer.play.Player;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;

@@ -6,7 +6,7 @@
 
 package chapter15.soccer.play;
 
-import soccer.event.GameEvent;
+import chapter15.soccer.event.GameEvent;
 
 /**
  * @author Administrator
