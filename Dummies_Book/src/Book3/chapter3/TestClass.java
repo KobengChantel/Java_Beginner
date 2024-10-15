@@ -8,9 +8,9 @@ package Book3.chapter3;
 
 public class TestClass {
     private int x = 5; // an instance field
-    public static void main(String[] args)
-    {
-//        int y = x; // error: won't compile
+    public static void main(String[] args) {
+        // int y = x; // error: won't compile
         int y = 5;
     }
 }
+

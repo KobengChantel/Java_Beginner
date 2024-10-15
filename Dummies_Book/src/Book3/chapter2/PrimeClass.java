@@ -9,28 +9,20 @@ package Book3.chapter2;
 
 import java.util.Scanner;
 
-// class PrimeClass {
-//
-//
-//     private Scanner sc = new Scanner(System.in);
-//     public int x;
-//
-//     {
-//         System.out.print(
-//                 "Enter the starting value for x: ");
-//         x = sc.nextInt();
-//     }
-// }
+class PrimeClass {
+    private int x;
 
+    // Constructor prompts the user to enter a starting value for x
+    public PrimeClass() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the starting value for x: ");
+        x = sc.nextInt();
+        sc.close(); // Close the Scanner
+    }
 
-class PrimeClass
-{
-    private Scanner sc = new Scanner(System.in);
-    public int x = getX();
-    private int getX()
-    {
-        System.out.print("Enter the starting value "
-                + "for x: ");
-        return sc.nextInt();
+    // Getter method for x
+    public int getXValue() {
+        return x;
     }
 }
+
