@@ -2,7 +2,7 @@ package Book3.chapter4;
 
 //how to use inheritance to create
 //your own custom exceptions
-
+//
 // use the try/catch statement to catch exceptions and the throw
 //statement to throw exceptions.
 
