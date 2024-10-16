@@ -9,7 +9,7 @@ package Book3.chapter8;
 //wildcard
 
 
-package com.lowewriter.util;
+//package com.lowewriter.util;
 import java.util.Scanner;
 public class Console {
     static Scanner sc = new Scanner(System.in);
