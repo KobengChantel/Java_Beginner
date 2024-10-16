@@ -19,7 +19,7 @@ public class CloneTest
 {
     public static void main(String[] args)
     {
-        Employee emp1 = new Employee(
+        Employee3 emp1 = new Employee3(
                 "Martinez", "Anthony");
         emp1.setSalary(40000.0);
         Employee emp2 = (Employee)emp1.clone();
@@ -28,12 +28,12 @@ public class CloneTest
         System.out.println(emp2);
     }
 }
-class Employee
+class Employee3
 {
     private String lastName;
     private String firstName;
     private Double salary;
-    public Employee(String lastName,
+    public Employee3(String lastName,
                     String firstName)
     {
         this.lastName = lastName;
@@ -65,8 +65,8 @@ class Employee
     }
     public Object clone()
     {
-        Employee emp;
-        emp = new Employee(
+        Employee3 emp;
+        emp = new Employee3(
         this.lastName, this.firstName);
         emp.setSalary(this.salary);
         return emp;

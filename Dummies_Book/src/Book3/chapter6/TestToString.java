@@ -7,16 +7,16 @@ public class TestToString {
 
     public static void main(String[] args)
     {
-        Employee emp = new Employee("Martinez",
+        Employee6 emp = new Employee6("Martinez",
                 "Anthony");
         System.out.println(emp.toString());
     }
 }
-class Employee
+class Employee6
 {
     private String lastName;
     private String firstName;
-    public Employee(String lastName, String firstName)
+    public Employee6(String lastName, String firstName)
     {
         this.lastName = lastName;
         this.firstName = firstName;

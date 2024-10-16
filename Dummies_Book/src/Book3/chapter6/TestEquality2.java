@@ -6,9 +6,9 @@ package Book3.chapter6;
 public class TestEquality2 {
     public static void main(String[] args)
     {
-        Employee emp1 = new Employee(
+        Employee5 emp1 = new Employee5(
                 "Martinez", "Anthony");
-        Employee emp2 = new Employee(
+        Employee5 emp2 = new Employee5(
                 "Martinez", "Anthony");
         if (emp1.equals(emp2))
         System.out.println(
@@ -18,11 +18,11 @@ else
                 "These are different employees.");
     }
 }
-class Employee
+class Employee5
         {
 private String lastName;
 private String firstName;
-public Employee(String lastName, String firstName)
+public Employee5(String lastName, String firstName)
 {
     this.lastName = lastName;
     this.firstName = firstName;
@@ -47,7 +47,7 @@ public String getLastName()
                 if (this.getClass() != obj.getClass())
                 return false;
 // cast to an Employee, then compare the fields
-                Employee emp = (Employee) obj;
+                Employee5 emp = (Employee5) obj;
                 return this.lastName.equals(emp.getLastName())
                     && this.firstName.equals(emp.getFirstName());
             }
