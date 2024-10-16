@@ -10,15 +10,28 @@ package Book4.chapter3;
 //element of a collection
 
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class UseIterator {
     public static void main(String[] args) {
+        // Initialize the ArrayList
+        ArrayList<String> nums = new ArrayList<>();
+
+        // Add elements to the list
+        nums.add("One");
+        nums.add("Two");
+        nums.add("Three");
         nums.add("Four");
-        String s;
-        Iterator e = nums.iterator();
-        while (e.hasNext())
-        {
-            s = (String)e.next();
+
+        // Create an iterator for the ArrayList
+        Iterator<String> iterator = nums.iterator();
+
+        // Iterate through the list and print each element
+        while (iterator.hasNext()) {
+            String s = iterator.next(); // No need for casting with generics
             System.out.println(s);
         }
     }
 }
+

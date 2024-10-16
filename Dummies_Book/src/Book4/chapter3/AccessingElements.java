@@ -7,19 +7,38 @@ package Book4.chapter3;
 //statement, which lets you retrieve the elements without bothering with indexes or
 //the get method//
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AccessingElements {
     public static void main(String[] args) {
-        //for loop
-        for (int i = 0; i < nums.size(); i++)
+        // Declare and initialize the list
+        List<String> nums = new ArrayList<>();
+
+        // Adding sample elements to the list
+        nums.add("One");
+        nums.add("Two");
+        nums.add("Three");
+        nums.add("Four");
+        nums.add("Five");
+
+        // Using a traditional for loop
+        System.out.println("Using a for loop:");
+        for (int i = 0; i < nums.size(); i++) {
             System.out.println(nums.get(i));
-        //for statemebnt
-        for (String s : nums)
+        }
+
+        // Using a for-each loop (enhanced for loop)
+        System.out.println("\nUsing a for-each loop:");
+        for (String s : nums) {
             System.out.println(s);
-//        enhanced for loop
-        for (String s : nums)
-        {
+        }
+
+        // Accessing elements with their indices
+        System.out.println("\nUsing index access:");
+        for (String s : nums) {
             int i = nums.indexOf(s);
             System.out.println("Item " + i + ": " + s);
-
         }
+    }
 }
