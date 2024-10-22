@@ -23,7 +23,7 @@ public class CountToTenError {
 
     //because the i variable is declared before the for statement, the ini-
     //tialization expression doesn’t name the variable’s data type.
-
+//
     public static void main(String[] args) {
         int i;
         for (i = 1; i <= 10; i++)

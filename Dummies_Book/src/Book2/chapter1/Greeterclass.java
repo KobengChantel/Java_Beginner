@@ -9,4 +9,13 @@ class Greeter {
     public void sayHello() {
         System.out.println("Hello, world!");
     }
+
+    // Main method to run the program
+    public static void main(String[] args) {
+        // Create a new instance of the Greeter class
+        Greeter myGreeterObject = new Greeter(); // Instantiate the Greeter object
+
+        // Call the sayHello method to print the greeting
+        myGreeterObject.sayHello(); // Output the greeting
+    }
 }
