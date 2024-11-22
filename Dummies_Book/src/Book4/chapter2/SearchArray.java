@@ -7,7 +7,7 @@ public class SearchArray {
     public static void main(String[] args) {
         // Initialize the lotto array with example numbers
         int[] lotto = {5, 7, 13, 21, 34, 55}; // Example array, ensure it's sorted for binary search
-        int lucky = 13; // Corrected declaration
+        int lucky = 55; // Corrected declaration
         int foundAt = -1;
 
         // Linear search
