@@ -1,5 +1,5 @@
 public class PrintDayOfWeek1 {
-    public void printDayOfWeek(int day) {
+    public void printDayOfWeek1(int day) {
         // Correctly format the switch expression
         var result = switch (day) {
             case 0 -> "Sunday";
@@ -16,6 +16,6 @@ public class PrintDayOfWeek1 {
 
     public static void main(String[] args) {
         PrintDayOfWeek1 dayPrinter = new PrintDayOfWeek1();
-        dayPrinter.printDayOfWeek(3); // Example usage
+        dayPrinter.printDayOfWeek1(3); // Example usage
     }
 }
