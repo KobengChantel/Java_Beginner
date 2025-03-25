@@ -13,11 +13,11 @@ package Chapter4.ex04_1_exercise;
 public class ShoppingCart {
     public static void main(String[]args){
        // declaring
-        String custName = "MmaSetshaba MoThusi";
+        String custName = "MmaSetshaba MoThusi Aliyaah";
         String itemDesc = "Cap";
         String message;
         // assigning variable
-       message = custName + " " + " wants to purchase a " + itemDesc;
+       message = custName + " " + " wants to purchase or buy a " + itemDesc;
     //printing the message
         System.out.println(message);
         //System.out.println(message);

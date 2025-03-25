@@ -14,7 +14,7 @@
 public class ShoppingCart {
 
     public static void main (String[] args){
-      String custName = "MmaSetshaba Motse";
+      String custName = "MmaSetshaba Motse Peace";
       String itemDesc = "Cap";
       String message = custName + " wants to purchase a " + itemDesc;
       //declare1. Declare and initialize numeric fields. Include price and tax (double),
@@ -25,12 +25,12 @@ public class ShoppingCart {
         double total;
 
         //2. Change the message variable to include quantity
-        message = custName+" wants to purchase "+quantity+ " "+itemDesc;
+        message = custName+" wants to purchase or buy "+quantity+ " "+itemDesc;
 System.out.println(message);
         //3. Calculate total by multiplying price * quantity * tax.
         total = quantity * price * tax;
 
         //4. Print a message showing the total cost.
-        System.out.println("Total cost with tax: "+total);
+        System.out.println("Total cost with tax is this amount: "+total);
     }
 }
