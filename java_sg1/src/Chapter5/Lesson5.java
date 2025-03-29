@@ -32,7 +32,7 @@ public class Lesson5 {
              System.out.println("Name is " + name);
              }**/
 
-            /**int passmark = 12;
+            int passmark = 12;
              boolean passed = false;
              int[] scores = {4,6,2,8,12,35,9};
 
@@ -42,7 +42,7 @@ public class Lesson5 {
              break;
              }
              }
-             System.out.println("At least one passed? " + passed);**/
+             System.out.println("At least one passed? " + passed);
 
         }
     }
