@@ -17,7 +17,7 @@ public class Lesson6 {
         cust2.displayCustomer();
 
         Item[] items = {new Item(), new Item(), new Item()};
-        for
+//        for
     }
 }
 class Customer{
