@@ -10,9 +10,10 @@ public class Utils {
         try{
             doThis();
         }catch(Exception e){
-            System.out.println(e);
+            System.out.println("doThis * \nException caught: + e.getMessage");
         }
-        System.out.println("Arrivedin doThis");
+//        System.out.println("Arrivedin doThis");
+//        System.out.println("Back in doThis");
     }
     //no try-catch block
     public void doThat() throws Exception{
