@@ -1,16 +1,16 @@
 //FRECODECAMP.ORG YOUTUBE VIDEO
 
-* Package : file structure on your computor it helps to organise different file of your program
+* 1. Package : file structure on your computor it helps to organise different file of your program
 must be on the first line of your program
 
-*Import : every program filewill reuse the exixsting code by importing the file
+*2. Import : every program filewill reuse the exixsting code by importing the file
 follow after  the package
 using star symbol u can import all files or single file
 
 
 * Import static
 
-* Class
+*3. Class
 class Car {
 }
 class should be a noun starting with capital letter
@@ -18,7 +18,7 @@ opening curly braces defines the beginning of the definition the class
 closing curly brace defines the end of the class
 a single class defines 1 job
 
-*Method
+*4. Method
 class consits of 1 or more methods
 methods are also called functions
 methods defines the actions u can execute on the class
@@ -30,7 +30,7 @@ drive(speed){
 method parameters are values
 
 
-*variable : a place holder for a value u can set
+*5. variable : a place holder for a value u can set
 different data types
 
 ******TYPES OF VARIABLES***
@@ -40,33 +40,39 @@ local variable
 parameter
 argument
 
-*Public : access modifier that defines that any class from any package may using that class
+*6. Public : access modifier that defines that any class from any package may using that class
 
 public class Car {
 public void drive(Speed) {
 }
 }
 
-** void : return nothing method will not return no value
+**7. void : return nothing method will not return no value
 
-** @ symbol indicates annotation
+**8.  @Test symbol indicates annotation
 given methos will be used
 
-*** CamelCase  :word with two or more words
-*** camel_hump : separate  2 words
-***  . we execute or alter by calling the method
-***  ; end of statement
+***9. CamelCase  :word with two or more words
+***10. camel_hump : separate  2 words
+*** 11. .Dot we execute or alter by calling the method
+***12.  ;colon end of statement
 
 -class
--object
+-13.object
 -object orientated language
 
 
-*** constructor : construct object from class files
-*** variable declarartion
-*** object allocation
+***14. constructor : construct object from class files
+***15 variable declarartion
+-need to define it before using it (;)
+-car;
+car myPorche = new Car(1,20);
+*** 16. object allocation
 
 22:02 end of session 1 and start of session 2
+-created first java program
+
+35;50 lesson 3 debriefing
 
 
 
