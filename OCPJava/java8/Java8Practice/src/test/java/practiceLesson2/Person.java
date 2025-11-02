@@ -6,7 +6,7 @@ public class Person {
 
         private Name personName;
 
-        public Person(Name personName){
+        public Person(practiceLesson2.Name personName){
             this.personName = personName;
         }
 
