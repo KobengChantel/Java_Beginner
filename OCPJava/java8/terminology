@@ -107,7 +107,11 @@ else statement : you can have any number of else  if statement and only 1 else s
 !
 ⌨️ (1:42:20)  8 - Loops: for, while and do while loop
 for loop
+while
+do while loop
 ⌨️ (1:56:57)  9 - For each loop and arrays
+Arrays
+for each loop
 ⌨️ (2:14:21)  10 - Arrays and enums
 ⌨️ (2:41:37)  11 - Enums and switch statement
 ⌨️ (3:07:21)  12 - Switch statement cont.
