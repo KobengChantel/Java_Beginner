@@ -113,6 +113,7 @@ do while loop
 Arrays
 for each loop
 ⌨️ (2:14:21)  10 - Arrays and enums
+enum
 ⌨️ (2:41:37)  11 - Enums and switch statement
 ⌨️ (3:07:21)  12 - Switch statement cont.
 ⌨️ (3:20:39)  13 - Logging using slf4j and logback
@@ -121,7 +122,8 @@ for each loop
 ⌨️ (5:05:36)  16 - Interfaces
 ⌨️ (5:46:54)  17 - Inheritance
 ⌨️ (6:20:20)  18 - Java Object finalize() method
-⌨️ (6:36:57)  19 - Object clone method.      [No lesson 20]
+⌨️ (6:36:57)  19 - Object clone method.
+[No lesson 20]
 ⌨️ (7:16:04)  21 - Number ranges, autoboxing, and more
 ⌨️ (7:53:00)  22 - HashCode and Equals
 ⌨️ (8:38:16)  23 - Java Collections
