@@ -4,7 +4,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class PersonTest {
+//lesson 10
+    static final String[] MY_STATE_VALUES = {"PENDING", "PROCESSING", "PROCESSED"};
 
+
+    //lesson 1-5
     @Test
     public void shouldReturnHelloWorld() {
         Person marcus = new Person();
@@ -75,8 +79,24 @@ for(Person person : persons){
 //lesson 10
             Person myPerson = new Person();
             Person myPerson2= null;
-            Person[] person2 = {persons[0], null, myPerson, myPerson2 };
+            //Person[] person2 = {persons[0], persons[3], null, myPerson, myPerson2 };
+            final Person[] person2 = {persons[0], persons[3], null, myPerson, myPerson2 };
+
+  LoggingLevel state = LoggingLevel.PENDING;
+  state = LoggingLevel
+            for(String state:MY_STATE_VALUES){
+    state = "Blaaa";
 }
+    if (state.equals("PENDING")){
+callMethod();
+
+    } if (state.equals("PROCESSING")){
+callMethod();
+    }if (state.equals("PROCESSED")){
+callMethod();
+    }
+}
+        }
 
 //lesson7
     @Test
