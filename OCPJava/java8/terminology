@@ -117,6 +117,7 @@ enum
 final
  static
 ⌨️ (2:41:37)  11 - Enums and switch statement
+
 ⌨️ (3:07:21)  12 - Switch statement cont.
 ⌨️ (3:20:39)  13 - Logging using slf4j and logback
 ⌨️ (3:51:19)  14 - Public static void main

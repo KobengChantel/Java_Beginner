@@ -80,21 +80,20 @@ for(Person person : persons){
             Person myPerson = new Person();
             Person myPerson2= null;
             //Person[] person2 = {persons[0], persons[3], null, myPerson, myPerson2 };
-            final Person[] person2 = {persons[0], persons[3], null, myPerson, myPerson2 };
+            final Person[] person2 = {persons[0], persons[3],myPerson, myPerson2,persons[2],persons[2], new Person() };
 
-  LoggingLevel state = LoggingLevel.PENDING;
-  state = LoggingLevel
-            for(String state:MY_STATE_VALUES){
-    state = "Blaaa";
-}
-    if (state.equals("PENDING")){
-callMethod();
-
-    } if (state.equals("PROCESSING")){
-callMethod();
-    }if (state.equals("PROCESSED")){
-callMethod();
-    }
+ for( LoggingLevel state: LoggingLevel.values()){
+                }
+                if (state == LoggingLevel.PENDING) {
+                    callMethod();
+                }
+                if (state == LoggingLevel.Processing) {
+                    callMethod();
+                }
+                if (state == LoggingLevel.Processed) {
+                    callMethod();
+                }
+            }
 }
         }
 
