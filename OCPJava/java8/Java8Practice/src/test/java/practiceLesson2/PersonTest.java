@@ -1,12 +1,23 @@
 package practiceLesson2;
 
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 
 public class PersonTest {
 //lesson 10
     static final String[] MY_STATE_VALUES = {"PENDING", "PROCESSING", "PROCESSED"};
 
+    //lesson 11
+    private static final int PROCESSED = 42;
+    private static final int PROCESSING = 41;
+    private static final int PENDING = 43;
+
+public String[] states() {
+    return Arrays.copyOf(MY_STATE_VALUES, MY_STATE_VALUES.length);
+}
 
     //lesson 1-5
     @Test
@@ -80,9 +91,28 @@ for(Person person : persons){
             Person myPerson = new Person();
             Person myPerson2= null;
             //Person[] person2 = {persons[0], persons[3], null, myPerson, myPerson2 };
-            final Person[] person2 = {persons[0], persons[3],myPerson, myPerson2,persons[2],persons[2], new Person() };
+            Person[] person2 = {persons[0], persons[3],myPerson, myPerson2,persons[2],persons[2], new Person() ,};
 
- or( LoggingLevel state: LoggingLevel.values()){
+            LoggingLevel state = LoggingLevel.PROCESSING;
+//lesson 11
+            int myState = PENDING;
+            myState = 300;
+            String myString = "myString";
+            switch(myState) {
+case PENDING;
+case PROCESSED;
+/*
+falls through
+ */
+case PROCESSING;
+ return callMethod();
+ break;
+ default;
+
+            }
+            //end of lesson 11
+
+ for( LoggingLevel state: LoggingLevel.values()){
                 }
                 if (state == LoggingLevel.PENDING) {
                     callMethod();
