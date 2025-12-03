@@ -124,6 +124,7 @@ switch statement
 char
 byte
 ⌨️ (3:20:39)  13 - Logging using slf4j and logback
+create a resource called logback.xml
 ⌨️ (3:51:19)  14 - Public static void main
 ⌨️ (4:11:35)  15 - Checked and Unchecked Exceptions
 ⌨️ (5:05:36)  16 - Interfaces
