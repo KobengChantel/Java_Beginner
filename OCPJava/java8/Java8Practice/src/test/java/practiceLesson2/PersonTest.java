@@ -95,19 +95,23 @@ for(Person person : persons){
 
             LoggingLevel state = LoggingLevel.PROCESSING;
 //lesson 11
-            int myState = PENDING;
+            int myState = PENDINGS;
+            String myString = "something";
+            char myState = ' d';
             myState = 300;
-            String myString = "myString";
+            String myString = "myString"
             switch(myState) {
-case PENDING;
-case PROCESSED;
+                default;
+                someOtherMethod();
+                break;
+                case PENDING;
 /*
 falls through
  */
-case PROCESSING;
- return callMethod();
- break;
- default;
+                case "Something";
+                    callMethod();
+                break;
+
 
             }
             //end of lesson 11

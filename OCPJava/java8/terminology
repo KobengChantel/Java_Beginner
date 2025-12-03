@@ -121,6 +121,8 @@ enum - etarate all the values
 switch statement
 ⌨️ (3:07:21)  12 - Switch statement cont.
 switch statement
+char
+byte
 ⌨️ (3:20:39)  13 - Logging using slf4j and logback
 ⌨️ (3:51:19)  14 - Public static void main
 ⌨️ (4:11:35)  15 - Checked and Unchecked Exceptions
