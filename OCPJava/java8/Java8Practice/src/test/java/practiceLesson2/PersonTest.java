@@ -99,7 +99,7 @@ for(Person person : persons){
             String myString = "something";
             char myState = ' d';
             myState = 300;
-            String myString = "myString"
+            String myString = "myString";
             switch(myState) {
                 default;
                 someOtherMethod();
