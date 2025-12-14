@@ -128,7 +128,7 @@ create a resource called logback.xml
 ⌨️ (3:51:19)  14 - Public static void main
 learning the main method
 ⌨️ (4:11:35)  15 - Checked and Unchecked Exceptions
-checked exception
+checked exception must be handled in a method
 unchecked exception
 ⌨️ (5:05:36)  16 - Interfaces
 ⌨️ (5:46:54)  17 - Inheritance
