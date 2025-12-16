@@ -1,5 +1,4 @@
-
-import java.io.IOException;
+package motto;
 
 public class CarState {
     DRIVING, WAITING, PARKING;
